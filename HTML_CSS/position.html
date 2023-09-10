@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Practice
+
+    </title>
+</head>
+<!--Body-->
+<body style="
+height: 3000px;
+padding-top: 60px;/*best practice to add space after a fixed navbar/header */
+padding-left: 80px;
+/*best practice to add space after a fixed sidebar */">
+
+<!--Header-->
+    <div style="background-color: brown;
+    color: white;
+    /*position: static;   nothing changes*/
+    position: fixed;
+    top:0px;
+    /*left: 50px;
+    right: 50px; this will add a padding from the body element for left-position element and right-position element*/
+    left:0px;
+    right: 0px;
+    height:50px;
+    z-index: 100;
+    ">
+        header
+    </div>
+
+    <!--sidebar-->
+    <div style="background-color: green;
+    color: white;
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    top:50px;
+    width:78px;
+    ">
+        --sidebar--
+        <div style="
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 60px;
+        right:60px;
+        ">
+            absolute
+        </div>
+    
+    </div>
+
+    <!--body content-->
+
+
+    <div style="
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 60px;
+    right:60px;
+    ">
+        absolute
+    </div>
+
+
+    <div style="background-color: lightblue;
+    height: 200px;
+    width:200px;
+    
+
+    ">div1</div>
+    <div style="background-color: lightpink;
+    height: 200px;
+    width:200px;
+    position:relative;">div2
+    <div style="
+    background-color: darkslategray;
+    color: white;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    ">
+        5:00
+    </div>
+    </div>
+    
+</body>
+</html>
+
+<!--There are 3 positions
+1) position: fixed;
+2) position: absolute;
+3) position: relative;
+
+Position: fixed;  it is applied to the elements that are attached to the window frame elements
+Used for Navbar or Sidebar
+They do not move when scroll
+
+
+Position: absolute;
+                    it is applied to position and element on another element on the page.
+                    Used for Notification number , timer element etc
+                    As they are on the page they are scrolled with the page.
+                    We cannot used it directly so we have to use it inside position: fixed or position: relative as they act like a container to it.
+
+Position: relative; it gives container for the absolute element on the page
+for eg 
+<div style='position:relative'>
+    Relative -absolute
+    <div style="Position:absolute">
+        absolute
+    </div>
+</div>       
+
+<div style='position:fixed'>
+    fixed -absolute
+    <div style="Position:absolute">
+        absolute
+    </div>
+</div>      
+-->

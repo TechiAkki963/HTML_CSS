@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Practice</title>
+    <style>
+        
+        /*Rounded Corner image*/
+        .rounded_corner{
+            width: 200px;
+            border-radius: 30px;
+        }
+
+
+        /*Image in the center of box-*/
+        .square{
+            margin-left:50px;
+            width:200px;
+            height: 200px;
+            object-fit: contain;
+            object-position: center;
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;
+            vertical-align: top;
+
+        }
+
+        /*Image in Top position inside the box*/
+        .square_position_top{
+            width:300px;
+            height:300px;
+            object-fit: contain;
+            object-position: top;
+            margin-left: 50px;
+            border-color: red;
+            border-width: 5px;
+            border-style: solid;
+            vertical-align: top;
+            
+        }
+
+        /*Imge is Profile-pic or Rounded format */
+        .rounded{
+            margin-left: 50px;
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Rounded Corner image-->
+    <img class="rounded_corner" src="pract_images/Panda.jpeg" alt="panda">
+
+    <!--Image in the center of box-->
+    <img class="square" src="pract_images/Panda_Full_View.avif" alt="panda">
+
+    <!--Image in Top position inside the box-->
+    <img class="square_position_top" src="pract_images/Panda_Full_View.avif" alt="panda">
+
+    <!--Imge is Profile-pic or Rounded format -->
+    <img class="rounded" src="pract_images/Panda.jpeg" alt="panda">
+    
+</body>
+</html>
